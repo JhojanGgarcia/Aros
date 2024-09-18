@@ -1,0 +1,148 @@
+.slider {
+  --slider-width: 100%;
+  --slider-height: 26px;
+  --slider-bg: rgba(82, 82, 82, 0.1);
+  --slider-border-radius: 8px;
+  /* level */
+  --level-color: #41414113;
+  --level-transition-duration: 0.3s;
+  /* icon */
+  --icon-margin: 15px;
+  --icon-color: var(--slider-bg);
+  --icon-size: 25px;
+  /* thumb */
+  --thumb-width: 4px;
+  --thumb-height: 16px;
+  --thumb-color: #ffffff;
+  --thumb-border-radius: 2px;
+  --thumb-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  --thumb-transition: all 0.2s ease;
+}
+
+.slider {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.slider .volume {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: var(--icon-margin);
+  width: var(--icon-size);
+  height: auto;
+}
+
+.slider .level {
+    border: 1px solid #ffffff0a;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: var(--slider-width);
+  height: var(--slider-height);
+  overflow: hidden;
+  border-radius: var(--slider-border-radius);
+  -webkit-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: all var(--level-transition-duration);
+  cursor: inherit;
+  background: radial-gradient(
+      circle at 10% 0%,
+      rgba(250, 250, 250, 0.05) 0%,
+      transparent 60%
+    )
+    transparent;
+  transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+}
+
+.slider .level::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: var(--thumb-width);
+  height: var(--thumb-height);
+  background: var(--thumb-color);
+  border-radius: var(--thumb-border-radius);
+  box-shadow: var(--thumb-shadow);
+  cursor: pointer;
+  margin-top: calc((var(--slider-height) - var(--thumb-height)) / 2);
+  transition: var(--thumb-transition);
+}
+
+.slider .level::-moz-range-thumb {
+  width: var(--thumb-width);
+  height: var(--thumb-height);
+  background: var(--thumb-color);
+  border-radius: var(--thumb-border-radius);
+  box-shadow: var(--thumb-shadow);
+  cursor: pointer;
+  border: none;
+  transition: var(--thumb-transition);
+}
+
+.slider .level::-ms-thumb {
+  width: var(--thumb-width);
+  height: var(--thumb-height);
+  background: var(--thumb-color);
+  border-radius: var(--thumb-border-radius);
+  box-shadow: var(--thumb-shadow);
+  cursor: pointer;
+  margin-top: 0;
+  transition: var(--thumb-transition);
+}
+
+.slider .level::-webkit-slider-runnable-track {
+  background: var(--level-color);
+  height: 100%;
+  border-radius: var(--slider-border-radius);
+}
+
+.slider .level::-moz-range-track {
+  height: 100%;
+  border-radius: var(--slider-border-radius);
+}
+
+.slider .level::-ms-track {
+  height: 100%;
+  border-radius: var(--slider-border-radius);
+}
+
+.slider:hover .level {
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.slider:hover .level::-webkit-slider-thumb {
+  --thumb-height: 20px;
+  --thumb-width: 6px;
+}
+
+.slider:hover .level::-moz-range-thumb {
+  --thumb-height: 20px;
+  --thumb-width: 6px;
+}
+
+.slider:hover .level::-ms-thumb {
+  --thumb-height: 20px;
+  --thumb-width: 6px;
+}
+
+.slider .level:active::-webkit-slider-thumb {
+  transform: scale(1.1);
+}
+
+.slider .level:active::-moz-range-thumb {
+  transform: scale(1.1);
+}
+
+.slider .level:active::-ms-thumb {
+  transform: scale(1.1);
+}

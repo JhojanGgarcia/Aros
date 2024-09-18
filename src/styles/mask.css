@@ -1,0 +1,8 @@
+.mask {
+  mask-image: linear-gradient(black 5%, transparent);
+}
+
+.maskLogo {
+    mask-image: linear-gradient(rgb(0, 0, 0) 50%, transparent);
+  }
+  
