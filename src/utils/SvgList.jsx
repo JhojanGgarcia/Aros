@@ -414,6 +414,7 @@ export const SvgList = [
         height={height}
         viewBox="0 0 147 146"
         fill="none"
+        style={{ transform: `rotate(${rotation}deg)` }}
       >
         <path
           d="M73.5175 145.771L146.376 0.0302734H115.892L73.5175 84.7797L31.1185 0.0302734H0.63501L73.5175 145.771Z"

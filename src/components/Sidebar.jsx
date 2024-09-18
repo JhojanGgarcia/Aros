@@ -316,7 +316,7 @@ const Footer = () => {
           <img
             src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=490273&theme=neutral"
             alt="Aros - SVG&#0032;logo&#0032;library&#0046;&#0032;Customize&#0032;colors&#0044;&#0032;rotation&#0044;&#0032;and&#0032;stroke&#0046; | Product Hunt"
-            width="150"
+            width="150"po
             height="54"
           />
         </a>
