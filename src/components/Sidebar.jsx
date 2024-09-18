@@ -278,7 +278,7 @@ const Footer = () => {
     <footer className="flex mt-16 items-center justify-center p-4  border-white/5">
       <span className="text-sm flex gap-2 items-center flex-col font-medium">
         <a
-          href="https://github.com/JhojanGgarcia"
+          href="https://github.com/JhojanGgarcia/Aros"
           target="_blank"
           rel="noopener noreferrer"
           className="border border-white/5 p-1 bg-[radial-gradient(circle_at_bottom,rgba(250,250,250,0.05)_0%,transparent_60%)] rounded-lg text-white/50 hover:text-white transition-all duration-500 flex items-center gap-2"
