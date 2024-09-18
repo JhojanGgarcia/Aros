@@ -309,6 +309,17 @@ const Footer = () => {
           </svg>
           Stars on Github
         </a>
+        <a
+          href="https://www.producthunt.com/posts/aros-2?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-aros&#0045;2"
+          target="_blank"
+        >
+          <img
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=490273&theme=neutral"
+            alt="Aros - SVG&#0032;logo&#0032;library&#0046;&#0032;Customize&#0032;colors&#0044;&#0032;rotation&#0044;&#0032;and&#0032;stroke&#0046; | Product Hunt"
+            width="150"
+            height="54"
+          />
+        </a>
       </span>
     </footer>
   );
