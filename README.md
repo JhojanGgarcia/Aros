@@ -17,9 +17,13 @@
 
 ❔**How to Use**
 
-**1.** Go to the input field and enter the name of your brand or logo.
-**2.** Click on "Choose a Logo" and select one of the 13 available logos.
-**3.** Style your logo using the available options, such as color, rotation, and stroke thickness.
+
+
+| Step | Description |
+| --- | --- |
+| 1. | Go to the input field and enter the name of your brand or logo. |
+| 2. | Click on "Choose a Logo" and select one of the 13 available logos. |
+| 3. | Style your logo using the available options, such as color, rotation, and stroke thickness. |
 
 🧩 **About the Code**
 
