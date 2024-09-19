@@ -92,8 +92,8 @@ export default function Sidebar() {
   return (
     <div className="flex min-h-screen">
       <aside className="h-full min-w-full  overflow-y-auto border-r border-white/5 drop-shadow-sm md:min-w-[240px] md:max-w-xs">
-        <nav className="flex items-start justify-between px-2 pt-6 md:flex border-b border-white/5">
-          <h1 className="mb-6 text-lg flex items-center font-semibold">
+        <nav className="flex items-start over justify-between px-2 pt-6 md:flex border-b border-white/5">
+          <h1 className="mb-6 text-lg flex items-center over font-semibold">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -150,7 +150,8 @@ export default function Sidebar() {
                 </filter>
               </defs>
             </svg>
-            <a href="/">Aros </a>
+            <span className="w-10 h-10 absolute top-0 left-0 blur-2xl bg-white/30"></span>
+            <a href="/">Aros</a>
             <div className="inline-flex animate-shine items-center mb-2 ml-1 justify-center rounded-full text-xs border border-neutral-800 bg-[linear-gradient(120deg,#0001,45%,#fff5 50%,50%,#0001)] bg-[length:200%_100%] px-2 py-1 font-medium text-neutral-400 transition-colors">
               Beta
             </div>
@@ -253,14 +254,14 @@ export default function Sidebar() {
           ></div>
 
           <div className="relative  rounded-lg p-4 w-full max-w-md z-10">
-            <ul className="mt-4 relative grid bg-black/5 border border-white/5 backdrop-blur-md p-6 rounded-3xl grid-cols-4 place-items-center">
-              <span class="absolute left-12 w-[96px] inset-x-1 top-0 h-px bg-gradient-to-r from-fuchsia-400/0 via-white/10 to-fuchsia-400/0"></span>
+            <ul className="mt-4 relative grid bg-[radial-gradient(circle_at_top,rgba(250,250,250,0.1)_0%,transparent_60%)] border border-white/5 bg-black p-6 rounded-3xl grid-cols-4 place-items-center">
+              <span class="absolute  w-full mx-auto inset-x-1 top-0 h-px bg-gradient-to-r from-fuchsia-400/0 via-white/10 to-fuchsia-400/0"></span>
               {SvgList.map((svg) => (
                 <button
                   type="button"
                   onClick={() => handleSvgSelect(svg)}
                   key={svg.id}
-                  className="py-2"
+                  className="py-2 opacity-50 hover:scale-110 transition-all duration-500" 
                 >
                   {svg.Svg({ color: "#fff", rotation: 0, thickness: 0 })}
                 </button>
@@ -316,7 +317,7 @@ const Footer = () => {
           <img
             src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=490273&theme=neutral"
             alt="Aros - SVG&#0032;logo&#0032;library&#0046;&#0032;Customize&#0032;colors&#0044;&#0032;rotation&#0044;&#0032;and&#0032;stroke&#0046; | Product Hunt"
-            width="150"po
+            width="150"
             height="54"
           />
         </a>
