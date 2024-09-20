@@ -20,12 +20,8 @@ export default function Sidebar() {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      console.log("Event target:", event.target);
       if (ref.current && !ref.current.contains(event.target)) {
-        console.log("Clicked outside the modal");
         setShowModal(false);
-      } else {
-        console.log("Clicked inside the modal");
       }
     };
     document.addEventListener("click", handleClickOutside, true);
@@ -44,7 +40,6 @@ export default function Sidebar() {
   const handleThicknessChange = (event) => {
     const currentValue = event.target.value;
     setThickness(currentValue);
-    console.log(`Thickness: ${currentValue}`);
   };
 
   const handleRotationChange = (event) => {
